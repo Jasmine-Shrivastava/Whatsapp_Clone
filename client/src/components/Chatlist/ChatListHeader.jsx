@@ -32,6 +32,13 @@ function ChatListHeader() {
     } },
 
     {
+      name: "New Group", 
+      callback: async() => {
+      setIsContextMenuVisible(false);
+      router.push("http://localhost:8080/");
+    } },
+
+     {
       name: "Logout", 
       callback: async() => {
       setIsContextMenuVisible(false);

@@ -70,12 +70,13 @@ function login() {
     // console.log({user});
   }
   return(
-   <div className="flex justify-center items-center bg-panel-header-background h-screen w-screen flex-col gap-6">
+   <div className="flex justify-center items-center bg-chat-background bg-fixed h-screen w-screen flex-col gap-6" style={{ backgroundColor: "#F0F8FF" }}>
     <div className="flex items-center justify-center gap-2 text-white">
-      <Image src="/whatsapp.gif" alt="chatapp" height={300} width={300}/>
-      <span className="text-6xl">Let's Connect</span>
+      <img src="/whatsapp.gif" alt="whatsapp" height={200} width={200}/>
+      <span className="text-6xl font-extrabold text-blue-800 leading-tight tracking-wide">Let's Connect</span>
+
     </div>
-    <button className="flex items-center justify-center gap-7 bg-search-input-container-background p-5 rounded-lg" onClick={handlelogin}>
+    <button className="flex items-center justify-center gap-7 bg-search-input-container-background p-5 rounded-lg" style={{ backgroundColor: "#6AAAE1" }} onClick={handlelogin}>
       <FcGoogle className="text-4xl"/>
       <span className="text-white text-2xl">Sign in with Google</span>
     </button>
